@@ -32,7 +32,7 @@ export default function NavBar() {
                     <li className='ml-10 text-sm uppercase hover:border-b'>Ayuda</li>
                     </Link>
             </ul>
-            <div className='md:hidden' onClick={handleNav}><AiOutlineMenu size={25}/></div>
+            <div className='md:hidden mr-2' onClick={handleNav}><AiOutlineMenu size={50}/></div>
         </div>
     </div>
     <div>
@@ -40,9 +40,9 @@ export default function NavBar() {
             <div>
                 <div className='flex w-full items-center justify-between'>
                     <Image src={'/assets/navLogo.png'} alt={'logo'} width='87' height={'35'}/>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer' onClick={handleNav}>
-                        <AiOutlineClose/>
-                    </div>
+                    <button className=' rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ' onClick={handleNav}>
+                      <AiOutlineClose className='h-6 w-6 '/>
+                    </button>
                 </div>
                 <div className='border-b border-gray-300 my-4' >
                     <p className='w-[85%] md:w-[90%] py-4'>Tienda de Ropa La Espirituana</p></div>
@@ -65,7 +65,7 @@ export default function NavBar() {
                     <li className='py-4 text-sm'>Ayuda</li>
                     </Link>
                 </ul>
-                <div className='pt-40'>
+                <div className='pt-20'>
                     <p className='uppercase tracking-widest text-[#5651e5]'>Contáctanos</p>
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
